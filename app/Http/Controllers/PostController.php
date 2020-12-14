@@ -38,7 +38,6 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all()->load('category')->load('user');
-        print $post;
         // Con load Category, carga la categoria y la mete al JSON
         // GRACIAS A LA MAGIA DE ORM
         
